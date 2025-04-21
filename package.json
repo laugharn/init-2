@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@radix-ui/react-slot": "1.2.0",
     "@tailwindcss/postcss": "4.1.4",
     "@types/node": "22.14.1",
     "@types/react": "19.1.2",
@@ -7,8 +8,8 @@
     "@vercel/speed-insights": "1.2.0",
     "babel-plugin-react-compiler": "19.0.0-beta-af1b7da-20250417",
     "class-variance-authority": "0.7.1",
-    "clsx": "2.1.1",
     "client-only": "0.0.1",
+    "clsx": "2.1.1",
     "flags": "3.2.0",
     "lucide-react": "0.503.0",
     "next": "15.3.1-canary.15",

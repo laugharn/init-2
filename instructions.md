@@ -1,6 +1,7 @@
 - Use the most up to date version of Next.js 15 and follow the docs. Remember that page params, cookies, and headers are promises
-- When installing a dependency, peg the exact version and do not use a caret
+- When installing a dependency, peg the exact version and do not use a range, do not use a caret or tilde
 - We are using Tailwind 4 in app/globals.css and that is where we should update styling. Do not create or use tailwind.config.ts
+- We do not have any pre-existing shadcn components, so if code generation expects one it should check if one exists first and if not create it
 - If v0 creates a file, start it with a `// v0-created` comment
 - The app directory is just for layout, page, or route files. Components go in the components directory, and everything else unless told otherwise goes in the lib directory.
 - Server functionality should go in `/lib/*/server.ts` files, which should import the `server-only` dependency
