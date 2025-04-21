@@ -1,0 +1,8 @@
+- Use the most up to date version of Next.js 15 and follow the docs. Remember that page params, cookies, and headers are promises
+- When installing a dependency, peg the exact version and do not use a caret
+- We are using Tailwind 4 in app/globals.css and that is where we should update styling. Do not create or use tailwind.config.ts
+- If v0 creates a file, start it with a `// v0-created` comment
+- The app directory is just for layout, page, or route files. Components go in the components directory, and everything else unless told otherwise goes in the lib directory.
+- Server functionality should go in `/lib/*/server.ts` files, which should import the `server-only` dependency
+- Client functionality should go in `/lib/*/client.ts` files, which should import the `client-only` dependency
+- Universal functionality should go in `/lib/*/index.ts` files
