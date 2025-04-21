@@ -7,3 +7,6 @@
 - Server functionality should go in `/lib/*/server.ts` files, which should import the `server-only` dependency
 - Client functionality should go in `/lib/*/client.ts` files, which should import the `client-only` dependency
 - Universal functionality should go in `/lib/*/index.ts` files
+- Imports, params, keys on objects, and other lists of values should be alphabetized when possible
+- When importing a type in a component, be explicit that the import is a type
+- Move things like client or suspense boundaries as far down the component tree as they can go
