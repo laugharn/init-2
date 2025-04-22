@@ -3,10 +3,12 @@
 - We are using Tailwind 4 in app/globals.css and that is where we should update styling. Do not create or use tailwind.config.ts
 - We do not have any pre-existing shadcn components, so if code generation expects one it should check if one exists first and if not create it
 - If v0 creates a file, start it with a `// v0-created` comment
-- The app directory is just for layout, page, or route files. Components go in the components directory, and everything else unless told otherwise goes in the lib directory.
+- The app directory is just for layout, page, or route files. Components go in the components directory, mock data goes in the data directory, and everything else unless told otherwise goes in the lib directory.
 - Server functionality should go in `/lib/*/server.ts` files, which should import the `server-only` dependency
 - Client functionality should go in `/lib/*/client.ts` files, which should import the `client-only` dependency
 - Universal functionality should go in `/lib/*/index.ts` files
 - Imports, params, keys on objects, and other lists of values should be alphabetized when possible
 - When importing a type in a component, be explicit that the import is a type
 - Move things like client or suspense boundaries as far down the component tree as they can go
+- Instead of deleting a file, remove all content aside from `// v0-created` and leave a comment that says `// v0-deleted`
+- If v0 adds new functions or components to files that are not `// v0-created`, add a `// v0-added` comment
